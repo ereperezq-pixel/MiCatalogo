@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "exportedAt": "2024-01-01T00:00:00.000Z",
+  "store": {
+    "name": "Verito's Herbalife",
+    "description": "Distribuidora oficial de productos Herbalife. ¡Cuida tu salud con los mejores productos!",
+    "whatsapp": "34600000000",
+    "schedule": "Lun-Vie 10:00-20:00 · Sáb 10:00-14:00",
+    "location": "Punto de recogida en mano",
+    "logo": ""
+  },
+  "categories": [
+    "Nutrición y batidos",
+    "Bebidas y aloe",
+    "Barritas y snacks",
+    "Cuidado personal",
+    "Nutrición deportiva"
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Fórmula 1 — Batido Nutritivo",
+      "description": "El batido de sustitución de comida más completo. Rico en proteínas, vitaminas y minerales.",
+      "category": "Nutrición y batidos",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v1a", "name": "Vainilla", "flavor": "Vainilla", "format": "550g", "price": 38.50, "available": true },
+        { "id": "v1b", "name": "Chocolate", "flavor": "Chocolate", "format": "550g", "price": 38.50, "available": true },
+        { "id": "v1c", "name": "Fresa", "flavor": "Fresa", "format": "550g", "price": 38.50, "available": false },
+        { "id": "v1d", "name": "Cookies & Cream", "flavor": "Cookies & Cream", "format": "550g", "price": 38.50, "available": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Proteína en Polvo Personalizada",
+      "description": "Complemento proteico para enriquecer tus batidos y aumentar el aporte de proteína.",
+      "category": "Nutrición y batidos",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v2a", "name": "Natural", "flavor": "Natural", "format": "240g", "price": 32.00, "available": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Aloe Vera Concentrado",
+      "description": "Bebida de aloe vera para el bienestar digestivo. Refrescante y natural.",
+      "category": "Bebidas y aloe",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v3a", "name": "Original", "flavor": "Original", "format": "473ml", "price": 24.00, "available": true },
+        { "id": "v3b", "name": "Mango", "flavor": "Mango", "format": "473ml", "price": 24.00, "available": true }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Herbal Tea — Té Concentrado",
+      "description": "Bebida energizante con extractos de té verde y naranja amarga.",
+      "category": "Bebidas y aloe",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v4a", "name": "Limón", "flavor": "Limón", "format": "50g", "price": 22.50, "available": true },
+        { "id": "v4b", "name": "Melocotón", "flavor": "Melocotón", "format": "50g", "price": 22.50, "available": true },
+        { "id": "v4c", "name": "Original", "flavor": "Original", "format": "50g", "price": 22.50, "available": true }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Barritas de Proteína",
+      "description": "Snack saludable y delicioso, rico en proteínas. Ideal entre comidas.",
+      "category": "Barritas y snacks",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v5a", "name": "Chocolate y Cacahuete", "flavor": "Chocolate y Cacahuete", "format": "14 uds.", "price": 28.00, "available": true },
+        { "id": "v5b", "name": "Vainilla y Almendra", "flavor": "Vainilla y Almendra", "format": "14 uds.", "price": 28.00, "available": true }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Crema Nutritiva para el Cuerpo",
+      "description": "Hidratación intensiva con extractos de plantas. Piel suave y nutrida.",
+      "category": "Cuidado personal",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v6a", "name": "Estándar", "flavor": "", "format": "200ml", "price": 19.50, "available": true }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Herbalife24 — Rebuild Strength",
+      "description": "Proteína de recuperación post-entreno con caseína y suero. Regenera el músculo.",
+      "category": "Nutrición deportiva",
+      "image": null,
+      "available": true,
+      "variants": [
+        { "id": "v7a", "name": "Chocolate", "flavor": "Chocolate", "format": "1kg", "price": 55.00, "available": true },
+        { "id": "v7b", "name": "Vainilla", "flavor": "Vainilla", "format": "1kg", "price": 55.00, "available": false }
+      ]
+    }
+  ],
+  "promotions": [
+    {
+      "id": 1,
+      "name": "10% en batidos",
+      "type": "percent",
+      "value": 10,
+      "productIds": [1, 2],
+      "variantIds": [],
+      "description": "¡10% de descuento en todos los batidos Fórmula 1!"
+    }
+  ]
+}
