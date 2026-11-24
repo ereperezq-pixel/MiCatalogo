@@ -1,9 +1,9 @@
 {
-  "name": "Mi catálogo Herbalife",
-  "short_name": "Catálogo",
+  "name": "Pedidos Herbalife",
+  "short_name": "Pedidos",
   "description": "Catálogo de productos Herbalife — consulta, elige y envía tu pedido por WhatsApp",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/MiCatalogo/",
+  "scope": "/MiCatalogo/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#2E7D32",
