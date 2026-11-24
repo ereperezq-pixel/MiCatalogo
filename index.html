@@ -7,14 +7,14 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Mi catálogo Herbalife">
+  <meta name="apple-mobile-web-app-title" content="Pedidos Herbalife">
   <meta name="description" content="Catálogo de productos Herbalife. Consulta productos, promociones y haz tu pedido por WhatsApp.">
-  <title>Mi catálogo Herbalife</title>
+  <title>Pedidos Herbalife</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
 <style>
 /* ═══════════════════════════════════════════════════
-   Mi catálogo Herbalife — Estilos completos
+   Pedidos Herbalife — Estilos completos
 ═══════════════════════════════════════════════════ */
 :root {
   --green:        #2E7D32;
@@ -439,7 +439,7 @@ textarea.field__input { resize: vertical; min-height: 80px; }
   <div class="site-header__inner">
     <div class="site-header__logo" id="header-logo">🌿</div>
     <div class="site-header__info">
-      <div class="site-header__name" id="header-name">Mi catálogo Herbalife</div>
+      <div class="site-header__name" id="header-name">Pedidos Herbalife</div>
       <div class="site-header__schedule" id="header-schedule"></div>
     </div>
     <div class="site-header__actions">
@@ -474,7 +474,7 @@ textarea.field__input { resize: vertical; min-height: 80px; }
 
 <script>
 /* ══════════════════════════════════════════════════════
-   Mi catálogo Herbalife — JavaScript completo
+   Pedidos Herbalife — JavaScript completo
 ══════════════════════════════════════════════════════ */
 
 // ── Ruta base (compatible con subdirectorio GitHub Pages) ──
@@ -1103,7 +1103,7 @@ async function init() {
   const headerName = document.getElementById('header-name');
   const headerSched = document.getElementById('header-schedule');
   const headerLogo  = document.getElementById('header-logo');
-  if (headerName)  headerName.textContent  = store.name  || 'Mi catálogo Herbalife';
+  if (headerName)  headerName.textContent  = store.name  || 'Pedidos Herbalife';
   if (headerSched) headerSched.textContent  = store.schedule || '';
   if (headerLogo && store.logo) {
     headerLogo.innerHTML = `<img src="${store.logo}" alt="Logo" onerror="this.parentElement.textContent='🌿'">`;
