@@ -1066,7 +1066,9 @@ function promoDescription(p) {
 async function loadCatalog() {
   try {
     const base = window.location.pathname.replace(/\/[^/]*$/, '/');
-    const resp = await fetch(base + 'data/catalog.json', { cache: 'no-cache' });
+    // Busca primero en data/, si falla busca en la raíz
+    let resp = await fetch(base + 'data/catalog.json', { cache: 'no-cache' });
+    if (!resp.ok) resp = await fetch(base + 'catalog.json', { cache: 'no-cache' });
     if (!resp.ok) throw new Error('No se pudo cargar el catálogo');
     State.catalog = await resp.json();
   } catch (e) {

@@ -15,6 +15,7 @@ const CACHE_PATHS = [
   'icons/icon-512.png',
   'assets/placeholder.png',
   'data/catalog.json',
+  'catalog.json',
 ];
 
 const CACHE_URLS = CACHE_PATHS.map(p => BASE + p);
@@ -46,7 +47,7 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
 
   // catalog.json: network-first para que el catálogo siempre esté actualizado
-  if (url.pathname.endsWith('catalog.json')) {
+  if (url.pathname.endsWith('/catalog.json')) {
     event.respondWith(
       fetch(event.request)
         .then(response => {
