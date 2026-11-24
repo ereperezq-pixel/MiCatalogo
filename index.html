@@ -476,6 +476,10 @@ textarea.field__input { resize: vertical; min-height: 80px; }
    Mi catálogo Herbalife — JavaScript completo
 ══════════════════════════════════════════════════════ */
 
+// ── Ruta base (compatible con subdirectorio GitHub Pages) ──
+const _BASE = window.location.pathname.replace(/\/[^/]*$/, '/');
+const PLACEHOLDER = _BASE + 'assets/placeholder.png';
+
 // ── Estado global ──────────────────────────────────────
 const State = {
   catalog:    null,   // datos cargados desde catalog.json
@@ -762,9 +766,9 @@ function productCardEl(product) {
   card.className = `product-card${isOut ? ' product-card--out' : ''}`;
   card.innerHTML = `
     <div class="product-card__img">
-      <img src="${product.image || './assets/placeholder.png'}"
+      <img src="${product.image || PLACEHOLDER}"
            alt="${esc(product.name)}" loading="lazy"
-           onerror="this.src='./assets/placeholder.png'">
+           onerror="this.src=PLACEHOLDER">
       ${isOut    ? `<span class="product-card__badge product-card__badge--out">Agotado</span>` : ''}
       ${hasPromo && !isOut ? `<span class="product-card__badge product-card__badge--promo">Oferta</span>` : ''}
     </div>
@@ -803,8 +807,8 @@ function renderProduct(app) {
     <button class="back-btn" id="btn-back">← Volver</button>
     <div class="product-detail">
       <div class="product-detail__img">
-        <img src="${p.image||'./assets/placeholder.png'}" alt="${esc(p.name)}"
-             onerror="this.src='./assets/placeholder.png'">
+        <img src="${p.image||PLACEHOLDER}" alt="${esc(p.name)}"
+             onerror="this.src=PLACEHOLDER">
       </div>
       <div class="product-detail__body">
         <div class="product-detail__cat">${esc(p.category)}</div>
@@ -967,8 +971,8 @@ function cartItemEl(item, idx) {
   el.className = 'cart-item';
   el.innerHTML = `
     <div class="cart-item__img">
-      <img src="${item.product.image||'./assets/placeholder.png'}" alt="${esc(item.product.name)}"
-           onerror="this.src='./assets/placeholder.png'">
+      <img src="${item.product.image||PLACEHOLDER}" alt="${esc(item.product.name)}"
+           onerror="this.src=PLACEHOLDER">
     </div>
     <div class="cart-item__info">
       <div class="cart-item__name">${esc(item.product.name)}</div>
